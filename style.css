@@ -317,6 +317,71 @@ body {
     line-height: 1.8;
 }
 
+.coding-achievements {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 2px solid #eee;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.achievement-item {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.achievement-item h4 {
+    color: #2c3e50;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.achievement-item h4 i {
+    font-size: 1.3em;
+    color: #667eea;
+}
+
+.achievement-item p {
+    color: #555;
+    font-size: 1.1em;
+    margin: 0;
+    font-weight: 500;
+}
+
+.achievement-item:nth-child(1) h4 i {
+    color: #FFA116;
+}
+
+.achievement-item:nth-child(2) h4 i {
+    color: #2EC866;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .coding-achievements {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .achievement-item {
+        padding: 20px;
+    }
+}
+
 /* Skills Section */
 .skills-grid {
     display: grid;
